@@ -9,7 +9,6 @@ os.makedirs(pasta_audio, exist_ok=True)
 pasta_saida = os.path.join(pasta_projeto, "audios resumidos")
 os.makedirs(pasta_saida, exist_ok=True) 
 
-# Lembrete: Quando for para o GitHub, remova a chave real por segurança!
 client = genai.Client(api_key="COLOQUE_AQUI_SUA_CHAVE_DE_API_DO_GEMINI")
 
 arquivos_audio = os.listdir(pasta_audio)
